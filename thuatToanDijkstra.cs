@@ -11,7 +11,6 @@ namespace BT4_LTDT_Cau1
         public static void Dijkstra(maTranKe AM, int dinhBatDau, int dinhCuoi)
         {
             bool[] T = new bool[AM.n];
-            int nT = AM.n;
             int[] L = new int[AM.n];
             int[] Prev = new int[AM.n];
             const int voCuc = int.MaxValue;
@@ -39,7 +38,6 @@ namespace BT4_LTDT_Cau1
                     break;
                 }
                 T[dinhI] = false;
-                nT--;
                 for(int k = 0; k < AM.n; k++)
                 {
                     if(AM.maTran[dinhI,k] != 0 && L[k] > (min + AM.maTran[dinhI, k]))

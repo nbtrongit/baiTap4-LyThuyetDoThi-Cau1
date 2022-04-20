@@ -11,11 +11,4 @@ namespace BT4_LTDT_Cau1
         public int n;
         public int[,] maTran;
     }
-
-    public struct Canh
-    {
-        public int Dau;
-        public int Cuoi;
-        public int trongSo;
-    }
 }
